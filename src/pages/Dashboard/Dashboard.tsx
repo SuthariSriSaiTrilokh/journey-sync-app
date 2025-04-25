@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Layout from '../../components/Layout';
@@ -37,7 +36,7 @@ const Dashboard: React.FC = () => {
           
           <div className="flex flex-col sm:flex-row gap-3">
             <button 
-              onClick={() => setCreateModal(true)}
+              onClick={() => setShowCreateModal(true)}
               className="btn-primary flex items-center justify-center"
             >
               <PlusCircle size={16} className="mr-2" />

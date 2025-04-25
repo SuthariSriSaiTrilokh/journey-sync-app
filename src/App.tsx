@@ -13,6 +13,10 @@ import Register from "./pages/Auth/Register";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import TripDetails from "./pages/Trip/TripDetails";
 import Photos from "./pages/Trip/Photos";
+import Locations from "./pages/Trip/Locations";
+import Expenses from "./pages/Trip/Expenses";
+import Hotels from "./pages/Trip/Hotels";
+import Friends from "./pages/Trip/Friends";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -36,6 +40,10 @@ const App = () => {
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/trip/:tripId" element={<TripDetails />} />
                 <Route path="/trip/:tripId/photos" element={<Photos />} />
+                <Route path="/trip/:tripId/locations" element={<Locations />} />
+                <Route path="/trip/:tripId/expenses" element={<Expenses />} />
+                <Route path="/trip/:tripId/hotels" element={<Hotels />} />
+                <Route path="/trip/:tripId/friends" element={<Friends />} />
                 
                 {/* Redirect to dashboard if user is already logged in */}
                 <Route path="/login" element={<Navigate to="/dashboard" />} />

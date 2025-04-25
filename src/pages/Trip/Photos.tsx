@@ -5,7 +5,7 @@ import { useTrip } from '../../contexts/TripContext';
 import { useAuth } from '../../contexts/AuthContext';
 import Layout from '../../components/Layout';
 import { useToast } from '../../hooks/use-toast';
-import { Upload, Download, Trash2, MapPin, User } from 'lucide-react';
+import { Upload, Download, Trash2, MapPin, User, Camera, X } from 'lucide-react';
 
 const Photos: React.FC = () => {
   const { tripId } = useParams<{ tripId: string }>();
